@@ -19,7 +19,7 @@ pipeline {
             steps 
             { 
                 echo 'Building docker image for you..' 
-                sh 'docker build -t balasastha/bankingown:1 .' 
+                sh 'docker build -t balasastha/finance-me:1 .' 
             } 
         } 
         stage ('Docker login'){ 
@@ -36,7 +36,7 @@ variable: 'dockerhubpass')]) {
             steps 
             { 
                 echo 'Pushing the docker image for you' 
-                sh 'docker push balasastha/bankingown:1' 
+                sh 'docker push balasastha/finance-me:1' 
             } 
         } 
         stage ('Invoking ansible playbook'){ 
