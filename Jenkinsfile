@@ -5,7 +5,7 @@ pipeline {
             steps 
             { 
                 echo 'Checking out the git repo...' 
-                git url:' https://github.com/Balasastha/Project-1.git' 
+                git url:' https://github.com/Balasastha/Project.git' 
             } 
         } 
         stage('Package the code'){ 
